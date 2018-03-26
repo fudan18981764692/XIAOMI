@@ -1,0 +1,174 @@
+/*头部样式在Header.css*/
+/*通用样式*/
+body{background: #fff; font: 12px/1.2 'Microsoft YaHei',simsun,tahoma,sans-serif;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea, p, blockquote, th, td,i{
+    padding:0;
+    margin:0;
+}
+ul,ol,li{list-style: none;}
+a{
+    text-decoration: none;
+    color:#666;
+}
+a:hover{
+    text-decoration: none;
+    color:#F60;
+}
+img{vertical-align: top;border:none;
+    outline:none}
+.fl{float:left}
+.fr{float:right}
+/*banner样式*/
+.home-slider{
+    position: relative;
+    width:100%;
+    height: 400px;
+    overflow: hidden;
+}
+.home-slider .slider-pic{
+    position: absolute;
+    width:100%;
+    height: 100%;
+}
+.home-slider .slider-pic li{
+    float:left;
+    position:absolute;
+    width:100%;
+    height:400px;
+    line-height: 400px;
+    text-align:center;
+}
+
+/*banner*/
+.home-slider .slider-num{
+    position: absolute;
+    bottom:16px;
+    left:50%;
+    margin-left:270px;
+    height:17px;
+}
+.home-slider .slider-num li{
+    float:left;
+    width:11px;
+    height:11px;
+    border-radius: 12px;
+    background-color: #fff;
+    margin-left: 8px;
+}
+.home-slider .slider-num li:hover{
+    background-color: #ff6e00;
+}
+.home-slider .slider-num li.on{
+    background-color: #ff6e00;
+}
+.mod-global-search{
+    width:494px;
+    height:400px;
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-left: -600px;
+    z-index:25;
+}
+.home-slider .gp_nav_wrap{
+    width:100%;
+    height:1px;
+    margin:0 auto;
+    max-width:1240px;
+}
+.home-slider .gp_nav_wrap .gp_nav_cf{
+    clear:both;
+    width:100%;
+}
+/*周边游 左侧固定框*/
+.gp_nav_wrap .gp_nav_cf .gp_nav{
+    position:relative;
+    float:left;
+    z-index:50;
+    width:318px;
+    height:420px
+}
+.gp_nav dd{
+    display: block;
+    position: relative;
+    z-index: 52;
+    margin-bottom: -1px;
+    border: 1px solid #e4e4e4;
+    border-left: none;
+    border-right: none;
+}
+
+.gp_nav_cf .gp_nav .go-nav_bg{
+    position: absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:420px;
+    background: hsla(0,0%,100%,.95);/*H是色度，取值在0度~360度之间，0度是红色，120度是绿色，240度是蓝色。360度也是红色。
+
+S是饱和度，是色彩的纯度，是一个百分比的值，取值在0%~100%，0%饱和度最低，100%饱和度最高
+
+L是亮度，也是一个百分比值，取值在0%~100%，0%最暗，100%最亮。
+
+A是不透明度，取值在0.0~1.0，0.0完全透明，1.0完全不透明。*/
+}
+.gp_nav_cf .gp_nav .go_nav_link{
+    width:268px;
+    position: relative;
+    padding:5px 25px 4px;
+    z-index:99;
+}
+.gp_nav_cf .gp_nav .go_nav_link strong{
+    color:#333;
+    line-height: 28px;
+    font:700 normal 16px Microsoft Yahei;
+}
+.gp_nav .go_nav_link .hr_link{
+    max-height:22px;
+  overflow: hidden;
+    line-height: 22px;
+}
+.go_nav_link .hr_link a{
+    color:#666;
+margin-left:8px;
+}
+/*周边游右侧隐藏框*/
+.gp_nav .gp_nav_sub{
+    display:none;
+    position: absolute;
+    top:0;
+    left:317px;
+    background:0px;
+    border-radius:5px;
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+    overflow:hidden;
+    width:573px;
+    border:1px solid #bbb;
+    border-left:none;
+}
+.gp_nav .gp_nav_sub .gp_nav_sublist1{
+    clear:both;
+    padding:20px 0;
+}
+.gp_nav .gp_nav_sub .gp_nav_sublist1 li{
+    float:left;
+    padding:8px 40px 8px 121px;
+    line-height: 22px;
+    width:480px;
+    position: relative;
+    font:normal normal 12px SimSun;
+
+}
+.gp_nav .gp_nav_sub .gp_nav_sublist1 li strong{
+    color:#333;
+    position: absolute;
+    left:0;
+    top:8px;
+    display: inline-block;
+    width:100px;
+    text-align: right;
+    line-height: 22px;
+}
